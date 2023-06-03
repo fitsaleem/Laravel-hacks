@@ -46,3 +46,15 @@ laravel-blade (christian howe)
 laravel blade snippets (winnie lin)
 
 laravel goto view (codingyu)
+
+# Laravel Folders and File Structure
+
+1: Model Folder - Database/SQL quries Handling files
+
+2: Controller File - Business Logic Files
+
+3: View Folder - HTML Files
+
+4: Routing Folder - URL Defining files
+
+5: Assets Folder/Public Folder - Images/fonts/Music/videos file /css/javaScript

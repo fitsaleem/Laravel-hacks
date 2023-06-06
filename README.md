@@ -58,3 +58,39 @@ laravel goto view (codingyu)
 4: Routing Folder - URL Defining files
 
 5: Assets Folder/Public Folder - Images/fonts/Music/videos file /css/javaScript
+
+# Larael Basic Routing 
+
+the routing is used in laraval for creat links and url
+
+```
+Route::get('/post',function (){
+    return view('post');
+});
+```
+
+# php artican routes commands
+
+1: php artisan route -h
+
+
+
+(this will show the tree command of route route:cache,route:clear,route:list)(cache will creat cache file for faster route registration)
+(clear will reomve the cache file and list will show the registereds routes)
+
+php artisan route:list --except-vendor ( only show the routes which creatred my yourself)
+
+php artisan route:list --path=post (replace post with you want to search any specifice routes)
+
+# laraval route parameters:
+
+we can pass any specifice paramenter values like number,string, special character
+
+Sometimes you will need to capture segments of the URI within your route. For example, you may need to capture a user's ID from the URL. You may do so by defining route parameters:
+
+```
+Route::get('/user/{id}', function (string $id) {
+    return 'User '.$id;
+});
+
+```

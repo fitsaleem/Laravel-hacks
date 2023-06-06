@@ -16,3 +16,16 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/post',function (){
+    return view('post');
+});
+
+// second method for creating route which is more easy 
+// Route::view('/post' ,'firstpost');
+
+Route::get('/post/firstpost' , function(){
+    return view('firstpost');
+});
+
+
